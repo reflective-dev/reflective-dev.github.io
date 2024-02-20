@@ -26,5 +26,6 @@ steps = [
   { update = {} },
   { test = {} },
   { step = "git", command = "push" },
+  { step = "github", command = "link-to-actions", verbose = true },
 ]
 
