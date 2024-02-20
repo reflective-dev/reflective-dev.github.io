@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo "Server running at http://localhost:8000"
+echo "  ^C to quit"
+python3 -m http.server

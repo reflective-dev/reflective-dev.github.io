@@ -1,0 +1,30 @@
+[doctor]
+checks = [
+  {check = "homebrew"},
+]
+
+[test]
+checks = []
+
+[audit]
+checks = [
+  {name = "markdown: check formatting", shell = "bin/dev/format --check", remedy = "bin/dev/format --all"},
+]
+
+[outdated]
+checks = []
+
+[update]
+steps = [
+  { step = "git", command = "pull" },
+  { doctor = {} },
+]
+
+[shipit]
+steps = [
+  { audit = {} },
+  { update = {} },
+  { test = {} },
+  { step = "git", command = "push" },
+]
+
