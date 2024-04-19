@@ -341,14 +341,16 @@
 
 	p {
     display: block;
-		margin: 0 0 1em 0;
+	}
+
+	p + p {
+		margin-top: 1em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #fff;
 		font-weight: 700;
 		line-height: 1em;
-		margin: 0 0 1em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -441,6 +443,10 @@
 
 /* Section/Article */
 
+	section + section {
+		margin-top: 1.5em;
+	}
+
 	section.special, article.special {
 		text-align: center;
 	}
@@ -469,10 +475,6 @@
 		font-size: 0.9em;
 		margin-top: -0.6em;
 		line-height: 1.5em;
-	}
-
-	p + h2 {
-		margin-top: 2em;
 	}
 
 	@media screen and (max-width: 980px) {
@@ -507,18 +509,18 @@
 		position: relative;
 	}
 
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
+	.icon:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+	}
 
-		.icon > .label {
-			display: none;
-		}
+	.icon > .label {
+		display: none;
+	}
 
 /* List */
 
@@ -528,42 +530,38 @@
 		padding-left: 1.25em;
 	}
 
-		ol li {
-			padding-left: 0.25em;
-		}
+	ol li {
+		padding-left: 0.25em;
+	}
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
+		margin: 0.5em 0 0.5em 0;
+		padding-inline-start: 1em;
 	}
 
-		ul li {
-			padding-left: 0.5em;
-		}
+	ul.icons {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+	}
 
-		ul.icons {
-			cursor: default;
-			list-style: none;
-			padding-left: 0;
-		}
+	ul.icons li {
+		display: inline-block;
+		padding: 0 1em 0 0;
+	}
 
-			ul.icons li {
-				display: inline-block;
-				padding: 0 1em 0 0;
-			}
+	ul.icons li:last-child {
+		padding-right: 0;
+	}
 
-				ul.icons li:last-child {
-					padding-right: 0;
-				}
+	ul.icons li .icon:before {
+		font-size: 1.25em;
+	}
 
-				ul.icons li .icon:before {
-					font-size: 1.25em;
-				}
-
-				ul.icons li a {
-					color: inherit;
-				}
+	ul.icons li a {
+		color: inherit;
+	}
 
 /* Form */
 
