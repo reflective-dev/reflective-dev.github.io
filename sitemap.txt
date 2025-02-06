@@ -1,4 +1,4 @@
 https://reflective.dev/
-https://reflective.dev/about
-https://reflective.dev/recent-work
+https://reflective.dev/consulting
+https://reflective.dev/open-source
 https://reflective.dev/software

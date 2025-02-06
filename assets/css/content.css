@@ -131,7 +131,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -161,12 +161,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-
   html,
   body {
     min-width: 320px;
   }
-
 }
 
 html,
@@ -185,7 +183,7 @@ body {
   padding: 6em 4em 4em 4em;
 }
 
-body>* {
+body > * {
   position: relative;
   z-index: 2;
 }
@@ -204,27 +202,21 @@ body.is-loading *:after {
 }
 
 @media screen and (max-width: 1680px) {
-
   body {
     padding: 6em 3.5em 3.5em 3.5em;
   }
-
 }
 
 @media screen and (max-width: 736px) {
-
   body {
     padding: 5em 2em 2em 2em;
   }
-
 }
 
 @media screen and (max-width: 360px) {
-
   body {
     padding: 5em 1.25em 1.25em 1.25em;
   }
-
 }
 
 /* BG */
@@ -244,10 +236,18 @@ body.is-loading *:after {
 }
 
 #bg div {
-  -moz-transition: opacity 3s ease, visibility 3s;
-  -webkit-transition: opacity 3s ease, visibility 3s;
-  -ms-transition: opacity 3s ease, visibility 3s;
-  transition: opacity 3s ease, visibility 3s;
+  -moz-transition:
+    opacity 3s ease,
+    visibility 3s;
+  -webkit-transition:
+    opacity 3s ease,
+    visibility 3s;
+  -ms-transition:
+    opacity 3s ease,
+    visibility 3s;
+  transition:
+    opacity 3s ease,
+    visibility 3s;
   background-size: cover;
   height: 100%;
   left: 0;
@@ -269,25 +269,21 @@ body.is-loading *:after {
 }
 
 @media screen and (max-width: 1280px) {
-
   #bg div.visible {
     -moz-animation: bg 29.25s linear infinite;
     -webkit-animation: bg 29.25s linear infinite;
     -ms-animation: bg 29.25s linear infinite;
     animation: bg 29.25s linear infinite;
   }
-
 }
 
 @media screen and (max-width: 736px) {
-
   #bg div.visible {
     -moz-animation: bg 18s linear infinite;
     -webkit-animation: bg 18s linear infinite;
     -ms-animation: bg 18s linear infinite;
     animation: bg 18s linear infinite;
   }
-
 }
 
 #bg div:only-child {
@@ -380,65 +376,63 @@ textarea {
 }
 
 @media screen and (max-width: 1680px) {
-
   body,
   input,
   select,
   textarea {
     font-size: 12pt;
   }
-
 }
 
 @media screen and (max-width: 1280px) {
-
   body,
   input,
   select,
   textarea {
     font-size: 11pt;
   }
-
 }
 
 @media screen and (max-width: 980px) {
-
   body,
   input,
   select,
   textarea {
     font-size: 12pt;
   }
-
 }
 
 @media screen and (max-width: 736px) {
-
   body,
   input,
   select,
   textarea {
     font-size: 12pt;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-
   body,
   input,
   select,
   textarea {
     font-size: 12pt;
   }
-
 }
 
 a {
-  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -moz-transition:
+    border-bottom-color 0.2s ease,
+    color 0.2s ease;
+  -webkit-transition:
+    border-bottom-color 0.2s ease,
+    color 0.2s ease;
+  -ms-transition:
+    border-bottom-color 0.2s ease,
+    color 0.2s ease;
+  transition:
+    border-bottom-color 0.2s ease,
+    color 0.2s ease;
   border-bottom: dotted 1px rgba(255, 255, 255, 0.25);
   color: #1cb495;
   text-decoration: none;
@@ -465,7 +459,7 @@ p {
   display: block;
 }
 
-p+p {
+p + p {
   margin-top: 1em;
 }
 
@@ -540,13 +534,7 @@ blockquote {
 }
 
 code {
-  background: rgba(255, 255, 255, 0.125);
-  border-radius: 6px;
-  border: solid 2px rgba(255, 255, 255, 0.35);
-  font-family: "Courier New", monospace;
-  font-size: 0.9em;
-  margin: 0 0.25em;
-  padding: 0.25em 0.65em;
+  color: #cca656;
 }
 
 pre {
@@ -575,7 +563,7 @@ hr.major {
 
 /* Section/Article */
 
-section+section {
+section + section {
   margin-top: 1.5em;
 }
 
@@ -590,48 +578,42 @@ header p {
   margin: 0 0 1.5em 0;
 }
 
-header h2+p {
+header h2 + p {
   font-size: 1.25em;
   margin-top: -1em;
   line-height: 1.5em;
 }
 
-header h3+p {
+header h3 + p {
   font-size: 1.1em;
   margin-top: -0.8em;
   line-height: 1.5em;
 }
 
-header h4+p,
-header h5+p,
-header h6+p {
+header h4 + p,
+header h5 + p,
+header h6 + p {
   font-size: 0.9em;
   margin-top: -0.6em;
   line-height: 1.5em;
 }
 
 @media screen and (max-width: 980px) {
-
   header br {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 736px) {
-
   header br {
     display: inline;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-
   header br {
     display: none;
   }
-
 }
 
 /* Icon */
@@ -651,7 +633,7 @@ header h6+p {
   text-transform: none !important;
 }
 
-.icon>.label {
+.icon > .label {
   display: none;
 }
 
@@ -704,10 +686,18 @@ form {
 
 form .message {
   text-decoration: none;
-  -moz-transition: opacity 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
-  -webkit-transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  -moz-transition:
+    opacity 0.2s ease-in-out,
+    -moz-transform 0.2s ease-in-out;
+  -webkit-transition:
+    opacity 0.2s ease-in-out,
+    -webkit-transform 0.2s ease-in-out;
+  -ms-transition:
+    opacity 0.2s ease-in-out,
+    -ms-transform 0.2s ease-in-out;
+  transition:
+    opacity 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
   -moz-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
@@ -743,7 +733,7 @@ form .message.success {
 }
 
 form .message.success:before {
-  content: '\f00c';
+  content: "\f00c";
 }
 
 form .message.failure {
@@ -751,7 +741,7 @@ form .message.failure {
 }
 
 form .message.failure:before {
-  content: '\f119';
+  content: "\f119";
 }
 
 label {
@@ -867,10 +857,18 @@ textarea {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -moz-transition: border-color 0.2s ease, background-color 0.2s ease;
-  -webkit-transition: border-color 0.2s ease, background-color 0.2s ease;
-  -ms-transition: border-color 0.2s ease, background-color 0.2s ease;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  -moz-transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+  -webkit-transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+  -ms-transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
   background-color: transparent;
   border-radius: 6px;
   border: none;
@@ -921,7 +919,7 @@ textarea:focus {
 
 .select-wrapper:before {
   color: rgba(255, 255, 255, 0.35);
-  content: '\f078';
+  content: "\f078";
   display: block;
   height: 2.75em;
   line-height: 2.75em;
@@ -962,8 +960,8 @@ input[type="radio"] {
   z-index: -1;
 }
 
-input[type="checkbox"]+label,
-input[type="radio"]+label {
+input[type="checkbox"] + label,
+input[type="radio"] + label {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
@@ -975,8 +973,8 @@ input[type="radio"]+label {
   position: relative;
 }
 
-input[type="checkbox"]+label:before,
-input[type="radio"]+label:before {
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: FontAwesome;
@@ -985,12 +983,12 @@ input[type="radio"]+label:before {
   text-transform: none !important;
 }
 
-input[type="checkbox"]+label:before,
-input[type="radio"]+label:before {
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
   background: rgba(255, 255, 255, 0.125);
   border-radius: 6px;
   border: solid 2px rgba(255, 255, 255, 0.35);
-  content: '';
+  content: "";
   display: inline-block;
   height: 1.65em;
   left: 0;
@@ -1001,51 +999,51 @@ input[type="radio"]+label:before {
   width: 1.65em;
 }
 
-input[type="checkbox"]:checked+label:before,
-input[type="radio"]:checked+label:before {
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
   background: #1cb495;
   border-color: #1cb495;
   color: #ffffff;
-  content: '\f00c';
+  content: "\f00c";
 }
 
-input[type="checkbox"]:focus+label:before,
-input[type="radio"]:focus+label:before {
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
   border-color: #1cb495;
   box-shadow: 0 0 0 2px #1cb495;
 }
 
-input[type="checkbox"]+label:before {
+input[type="checkbox"] + label:before {
   border-radius: 6px;
 }
 
-input[type="radio"]+label:before {
+input[type="radio"] + label:before {
   border-radius: 100%;
 }
 
 ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 :-moz-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 ::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .formerize-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 /* Button */
@@ -1059,10 +1057,22 @@ button,
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  -moz-transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+  -webkit-transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+  -ms-transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+  transition:
+    background-color 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
   background-color: #1cb495;
   border-radius: 6px;
   border: 0;
@@ -1108,7 +1118,6 @@ button:disabled,
 }
 
 @media screen and (max-width: 480px) {
-
   input[type="submit"],
   input[type="reset"],
   input[type="button"],
@@ -1116,7 +1125,6 @@ button:disabled,
   .button {
     padding: 0;
   }
-
 }
 
 /* Header */
@@ -1136,7 +1144,6 @@ button:disabled,
 }
 
 @media screen and (max-width: 736px) {
-
   #header h1 {
     font-size: 2em;
   }
@@ -1144,15 +1151,12 @@ button:disabled,
   #header p {
     font-size: 1em;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-
   #header {
     margin: 0 0 1em 0;
   }
-
 }
 
 /* Signup Form */
@@ -1171,16 +1175,15 @@ button:disabled,
   width: 18em;
 }
 
-#signup-form>* {
+#signup-form > * {
   margin: 0 0 0 1em;
 }
 
-#signup-form> :first-child {
+#signup-form > :first-child {
   margin: 0 0 0 0;
 }
 
 @media screen and (max-width: 480px) {
-
   #signup-form {
     -moz-flex-direction: column;
     -webkit-flex-direction: column;
@@ -1194,7 +1197,7 @@ button:disabled,
     width: 100%;
   }
 
-  #signup-form>* {
+  #signup-form > * {
     margin: 1.25em 0 0 0;
   }
 
@@ -1207,7 +1210,6 @@ button:disabled,
     margin-top: 0;
     position: absolute;
   }
-
 }
 
 /* Footer */
@@ -1251,7 +1253,7 @@ button:disabled,
   opacity: 1;
 }
 
-#footer> :last-child {
+#footer > :last-child {
   margin-bottom: 0;
 }
 
@@ -1267,7 +1269,7 @@ nav {
   top: 1em;
 }
 
-nav+.logo {
+nav + .logo {
   display: block;
 }
 

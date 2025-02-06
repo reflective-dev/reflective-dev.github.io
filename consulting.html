@@ -1,0 +1,201 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/content.css" />
+    <title>About Reflective</title>
+
+    <meta
+      name="description"
+      content="Application development and workflow automation consulting, specializing in Elixir, Phoenix, Rust, and Swift."
+    />
+    <meta
+      name="og:description"
+      property="og:description"
+      content="Application development and workflow automation consulting, specializing in Elixir, Phoenix, Rust, and Swift."
+    />
+    <meta name="og:image" property="og:image" content="https://www.reflective.dev/images/logo.png" />
+    <meta name="og:title" property="og:title" content="Reflective Software" />
+    <meta name="og:url" property="og:url" content="https://www.reflective.dev/" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="/" class="logo"><img src="images/logo.svg" width="32" height="37" /></a>
+      <div class="links">
+        <a href="/">home</a>
+        <a href="/software">software</a>
+        <a href="/open-source">open source</a>
+        consulting
+      </div>
+    </nav>
+
+    <header id="header">
+      <h1>Consulting</h1>
+    </header>
+
+    <main>
+      <section>
+        <p>
+          Reflective Software is the software consulting practice of Eric Saxby and Erik Hanson, who each have decades
+          of software development experience in various programming languages, most recently with Elixir and Rust.
+        </p>
+      </section>
+      <section>
+        <h3>What We Do</h3>
+        <p>
+          With a strong focus on developer tooling, automated testing, and observability tools, we’ve helped teams to
+          reduce the onboarding time of new software engineers, as well as to reduce the pains of their development
+          processes by streamlining, automating, and reducing risks in their workflows as well as by replacing manual
+          checklists with continuous integration and deployment pipelines.
+        </p>
+        <p>
+          We are strong advocates of automated testing and can help kickstart or improve your application’s test suite.
+          We have a lot of experience with unit tests, UI tests, integration tests, and API tests, and we have written a
+          number of open source libraries to help with testing.
+        </p>
+        <p>
+          We have strong web app and web UI skills, and have built many web applications on our own and alongside our
+          clients’ developers, including multi-user multi-role enterprise workflow applications, and a videoconferencing
+          server with a web-based client. We have added web-based dashboards showing application performance and status
+          as well as real-time remote visualization of high-volume data transformations.
+        </p>
+        <p>
+          We use a lot of open source software, and we contribute back with pull requests and by creating our own
+          <a href="/open-source">open source libraries and tools</a>.
+        </p>
+      </section>
+
+      <section>
+        <h3>Tech Stack</h3>
+        <ul>
+          <li>Languages: Elixir, Rust, Swift</li>
+          <li>Web frameworks: Phoenix, Phoenix LiveView</li>
+          <li>Data stores: PostgreSQL, Azure SQL, Dremio</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Highlights</h3>
+        <ul>
+          <li>
+            Worked on projects both on our own, and with an existing team by contributing to feature development while
+            mentoring less-experienced members to improve their programming skills.
+          </li>
+          <li>Built multiple highly interactive web applications with full test coverage.</li>
+          <li>Built data pipelines with minimal maintenance requirements over multiple years of service.</li>
+          <li>Decreased data processing delays of a critical health care data pipeline from hours to minutes.</li>
+          <li>
+            Processed a multi-year data backlog, with data enrichment from severely resource-constrained external
+            services, with real-time reprioritization of data.
+          </li>
+          <li>
+            Integrated data from various sources including USB-connected hardware, XML- and HL7-based healthcare APIs,
+            non-normalized data lakes, and legacy SQL databases.
+          </li>
+          <li>
+            Worked with untested and undocumented APIs, building resilience into data pipelines by discovering,
+            documenting, and handling unexpected use-cases.
+          </li>
+          <li>Optimized SQL queries for datasets of over 100M rows with our solid relational database skills.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Elixir</h3>
+
+        <p>
+          We have been building applications in Elixir since 2018, and have deployed over a dozen Elixir applications in
+          that time. We have also published and maintain
+          <a href="/open-source">many open source libraries</a>.
+        </p>
+
+        <p>
+          We have decades of test-driven development experience, which we have brought to Elixir in terms of building
+          full Phoenix LiveView UI test suites (that run in a few seconds), as well as test-related open source
+          libraries such as
+          <a href="https://hex.pm/packages/pages" target="_blank">Pages</a>,
+          <a href="https://hex.pm/packages/html_query" target="_blank">HtmlQuery</a>,
+          <a href="https://hex.pm/packages/xml_query" target="_blank">XmlQuery</a>, and
+          <a href="https://hex.pm/packages/schema_assertions" target="_blank">Schema Assertions</a>.
+        </p>
+
+        <p>
+          We have not only built UI-heavy applications, but also built multiple data processing applications. We have
+          experience using libraries such as Broadway, GenStage, Flow, Membrane, and Oban, as well as high-volume and
+          high-speed data processing applications using tools provided by the Erlang and Elixir standard libraries.
+        </p>
+
+        <p>
+          In these data pipelines, we have faced problems related to strict concurrency constraints, API
+          interoperability with little, no, or incorrect documentation, and with the need for high reliability and high
+          speed (for instance, reducing a 12-hour long process to under 2 minutes).
+        </p>
+
+        <ul>
+          <li>CSV imports and exports</li>
+          <li>Excel imports and exports</li>
+          <li>XML parsing and generation</li>
+          <li>Event sourcing of high-volume data pipelines</li>
+          <li>Streaming data</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Rust</h3>
+
+        <p>
+          We have built CLIs and terminal UIs in Rust, that we and teams we’ve worked with use every day. We have also
+          used Rust at the core of Elixir NIFs for high speed data processing, as well as for interoperability with
+          <a href="https://github.com/synchronal/specter" target="_blank">Rust libraries such as webrtc-rs</a>.
+        </p>
+
+        <p>
+          Our experience has focused on using Elixir as a main orchestrator for server operations, but we'd love to work
+          more with Rust in terms of implementing core application logic shareable between multiple languages, such as
+          Elixir and Swift.
+        </p>
+      </section>
+
+      <section>
+        <h3>Developer workflow and tooling</h3>
+
+        <p>
+          We care a lot about developer workflow, and believe that team members should be able to onboard onto new
+          projects within minutes. New hires should be able to ship code on their first day, with a safety harness of
+          tooling to ensure they are able to do so confidently while reducing annoyances.
+        </p>
+
+        <p>
+          For this purpose, we have build two tools:
+          <a href="https://github.com/synchronal/medic-rs" target="_blank">Medic</a> and
+          <a href="https://github.com/synchronal/dyd" target="_blank">Daily Diff</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Want to talk about working together?</h2>
+
+        <p>Email us at <a href="mailto:contact@reflective.dev">contact@reflective.dev</a>.</p>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <ul class="icons">
+        <li>
+          <a href="https://github.com/reflective-dev" class="icon fa-github"><span class="label">GitHub</span></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/reflective-software" class="icon fa-linkedin"
+            ><span class="label">LinkedIn</span></a
+          >
+        </li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; 2025 Reflective Software, LLC</li>
+      </ul>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

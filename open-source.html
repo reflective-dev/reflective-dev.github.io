@@ -1,0 +1,196 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/content.css" />
+    <title>Open Source</title>
+
+    <meta
+      name="description"
+      content="Application development and workflow automation consulting, specializing in Elixir, Phoenix, Rust, and Swift."
+    />
+    <meta
+      name="og:description"
+      property="og:description"
+      content="Application development and workflow automation consulting, specializing in Elixir, Phoenix, Rust, and Swift."
+    />
+    <meta name="og:image" property="og:image" content="https://www.reflective.dev/images/logo.png" />
+    <meta name="og:title" property="og:title" content="Reflective Software" />
+    <meta name="og:url" property="og:url" content="https://www.reflective.dev/" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="/" class="logo"><img src="images/logo.svg" width="32" height="37" /></a>
+      <div class="links">
+        <a href="/">home</a>
+        <a href="/software">software</a>
+        open source
+        <a href="/consulting">consulting</a>
+      </div>
+    </nav>
+
+    <header id="header">
+      <h1>Open Source</h1>
+    </header>
+
+    <main>
+      <section>
+        <p>
+          We have built a number of open source libraries. Instead of tying them to our company, we have created a
+          separate GitHub organization called <a href="https://synchronal.dev">Synchronal</a> so that the code can live
+          outside of and beyond Reflective Software.
+        </p>
+
+        <p>
+          <a href="https://github.com/sponsors/reflective-dev">Sponsoring our open source efforts</a> will help us
+          maintain our open source projects and create new ones.
+        </p>
+      </section>
+
+      <section>
+        <h2>Apps</h2>
+
+        <ul>
+          <li>
+            <a href="https://github.com/synchronal/medic-rs">Medic</a> eases software development pains and increases
+            productivity via a codified, opinionated developer workflow. Commands set up (and update) developer
+            environments, audit code changes, check for and update outdated dependenices, and ship changes after running
+            audits and test suite(s).
+          </li>
+
+          <li>
+            <a href="https://github.com/synchronal/dyd">Daily Diff</a> facilitates viewing git diffs across multiple
+            projects, across multiple days. See what you’re doing across teams, and across all git repos your teams
+            manage.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Elixir Libraries</h2>
+
+        <h3>Database</h3>
+
+        <ul>
+          <li>
+            <a href="https://github.com/synchronal/ecto_date_time_range">EctoDateTimeRange</a>,
+            <a href="https://github.com/synchronal/ecto_email">EctoEmail</a>, and
+            <a href="https://github.com/synchronal/ecto_phone">EctoPhone</a> implement custom Ecto types.
+          </li>
+          <li>
+            <a href="https://github.com/synchronal/ecto_temp">EctoTemp</a> has functions and macros such as
+            <code>deftemptable</code> and <code>create_temp_tables</code> to help with using Postgres temp tables.
+          </li>
+          <li>
+            <a href="https://github.com/synchronal/schema_assertions">SchemaAssertions</a> has functions such as
+            <code>assert_belongs_to</code>, <code>assert_has_many</code>, <code>assert_schema</code>, and
+            <code>assert_changeset_valid</code> for testing and validating ecto schemas.
+          </li>
+          <li>
+            <a href="https://github.com/synchronal/supra">Supra</a> has functions such as <code>count</code>,
+            <code>first</code>, <code>limit</code>, and <code>stream</code> for use in Ecto queries.
+          </li>
+        </ul>
+
+        <h3>HTML and XML</h3>
+
+        <ul>
+          <li>
+            <a href="https://github.com/synchronal/html_query">HtmlQuery</a> and
+            <a href="https://github.com/synchronal/xml_query">XmlQuery</a> provide a concise shared API, honed over
+            multiple years, for querying HTML and XML with Elixir. They each have some additional HTML- or XML-specific
+            functions.
+          </li>
+        </ul>
+
+        <h3>Testing</h3>
+
+        <ul>
+          <li>
+            <a href="https://github.com/synchronal/elixir-gestalt">Gestalt</a> is a wrapper for configuration and
+            environment that allows for process-specific overrides.
+          </li>
+          <li>
+            <a href="https://github.com/synchronal/html_query">HtmlQuery</a> and
+            <a href="https://github.com/synchronal/xml_query">XmlQuery</a> are very useful for easily parsing and
+            inspecting HTML and XML for use in tests.
+          </li>
+          <li>
+            <a href="https://github.com/synchronal/pages">Pages</a> is the original web testing library that seamlessly
+            switches between LiveViews and controller-based views.
+          </li>
+          <li>
+            <a href="https://github.com/synchronal/schema_assertions">SchemaAssertions</a> has functions such as
+            <code>assert_belongs_to</code>, <code>assert_has_many</code>, <code>assert_schema</code>, and
+            <code>assert_changeset_valid</code> for testing and validating ecto schemas.
+          </li>
+        </ul>
+
+        <h3>Other</h3>
+
+        <ul>
+          <li>
+            <a href="https://github.com/synchronal/exceed">Exceed</a> is a high-level stream-oriented Excel (.xslx)
+            generator and can be used for converting large datasets to Excel format on the fly and streaming them with
+            minimial delay.
+          </li>
+          <li>
+            <a href="https://github.com/synchronal/ex_email">ExEmail</a> provides parsing and validation of email
+            addresses.
+          </li>
+          <li>
+            <a href="https://github.com/synchronal/hex-publish-action">Hex Publish</a> is a GitHub action that will
+            publish an existing package to hex.pm when the version changes.
+          </li>
+          <li>
+            <a href="https://github.com/synchronal/markdown_formatter">MarkdownFormatter</a> is an Elixir formatter for
+            Markdown files and sigils.
+          </li>
+          <li><a href="https://github.com/synchronal/moar">Moar</a> is a library of over 100 useful functions.</li>
+          <li>
+            <a href="https://github.com/synchronal/tablerone">Tablerone</a> renders
+            <a href="https://tabler.io/icons">Tabler Icons</a> by downloading individual icons to the priv directory of
+            the parent application during development, and loading them from files at runtime.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Rust Libraries</h2>
+
+        <ul>
+          <li>
+            <a href="https://github.com/synchronal/retrogress">Retrogress</a> wraps the Indicatif progress bar library,
+            providing structs and traits with a simple and limited API and that can be passed between modules and
+            functions.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Get In Touch</h2>
+
+        <p>Email us at <a href="mailto:contact@reflective.dev">contact@reflective.dev</a>.</p>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <ul class="icons">
+        <li>
+          <a href="https://github.com/reflective-dev" class="icon fa-github"><span class="label">GitHub</span></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/reflective-software" class="icon fa-linkedin"
+            ><span class="label">LinkedIn</span></a
+          >
+        </li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; 2025 Reflective Software, LLC</li>
+      </ul>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
