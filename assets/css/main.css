@@ -606,6 +606,11 @@ header h6 + p {
   line-height: 1.5em;
 }
 
+main p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
 @media screen and (max-width: 980px) {
   header br {
     display: none;

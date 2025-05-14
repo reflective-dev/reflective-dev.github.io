@@ -420,6 +420,11 @@ textarea {
   }
 }
 
+main {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
 a {
   -moz-transition:
     border-bottom-color 0.2s ease,
@@ -676,6 +681,10 @@ ul.icons li .icon:before {
 
 ul.icons li a {
   color: inherit;
+}
+
+li {
+  line-height: 1.8em;
 }
 
 /* Form */
