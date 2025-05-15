@@ -43,3 +43,5 @@ except KeyboardInterrupt:
     pass
 finally:
     print("\nShutting down server...")
+
+httpd.close()
