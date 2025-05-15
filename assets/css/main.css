@@ -594,11 +594,17 @@ section.cols {
 }
 
 section.callout {
-  background: rgba(5, 24, 32, 0.35);
+  background: linear-gradient(70deg, rgba(24, 42, 47, 0.5) 10%, rgba(5, 24, 32, 0.5) 80%);
   padding-top: 3em;
   padding-bottom: 1.8em;
   margin: 1em 0 2em;
   line-height: 1.8;
+}
+
+@media screen and (min-width: 980px) {
+  section.callout {
+    padding-bottom: 2.8em;
+  }
 }
 
 header p {
