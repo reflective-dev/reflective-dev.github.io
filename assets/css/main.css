@@ -1318,7 +1318,6 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 0.5em;
-  align-items: start;
   justify-content: space-between;
   opacity: 0.5;
   padding-bottom: 1em;
