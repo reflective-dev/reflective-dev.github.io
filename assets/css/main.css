@@ -113,7 +113,12 @@ section {
 }
 
 body {
+  display: flex;
+  align-items: space-between; 
   line-height: 1;
+  min-height: 100vh;
+  -webkit-text-size-adjust: none;
+  -ms-overflow-style: scrollbar;
 }
 
 ol,
@@ -139,10 +144,6 @@ table {
   border-spacing: 0;
 }
 
-body {
-  -webkit-text-size-adjust: none;
-}
-
 /* Box Model */
 
 *,
@@ -157,10 +158,6 @@ body {
 
 @-ms-viewport {
   width: device-width;
-}
-
-body {
-  -ms-overflow-style: scrollbar;
 }
 
 @media screen and (max-width: 480px) {
@@ -197,9 +194,8 @@ body {
   -moz-justify-content: center;
   -webkit-justify-content: center;
   -ms-justify-content: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #000;
-  padding: 6em 4em 4em 4em;
 }
 
 body > * {
@@ -220,21 +216,29 @@ body.is-loading *:after {
   transition: none !important;
 }
 
+nav, header, section, footer {
+  padding: 0 3.5rem;
+}
+
 @media screen and (max-width: 1680px) {
-  body {
-    padding: 6em 3.5em 3.5em 3.5em;
+  nav, header, section, footer {
+    padding: 0 3.5rem;
   }
 }
 
 @media screen and (max-width: 736px) {
-  body {
-    padding: 5em 2em 2em 2em;
+  nav, header, section, footer {
+    padding: 0 2rem;
   }
 }
 
 @media screen and (max-width: 360px) {
-  body {
-    padding: 5em 1.25em 1.25em 1.25em;
+  nav, header, section, footer {
+    padding: 0 1.25rem;
+  }
+
+  nav {
+    padding-top: 1rem;
   }
 }
 
@@ -388,7 +392,6 @@ select,
 textarea {
   color: rgba(255, 255, 255, 0.75);
   font-family: "Roboto", sans-serif;
-  font-size: 16pt;
   font-weight: 400;
   letter-spacing: -0.01em;
   line-height: 1.65em;
@@ -580,6 +583,20 @@ article.special {
   text-align: center;
 }
 
+section.cols {
+  display: grid;
+  grid-gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+}
+
+section.callout {
+  background: rgba(5, 24, 32, 0.35);
+  padding-top: 3em;
+  padding-bottom: 1.8em;
+  margin: 1em 0 2em;
+  line-height: 1.8;
+}
+
 header p {
   color: rgba(255, 255, 255, 0.5);
   position: relative;
@@ -606,7 +623,7 @@ header h6 + p {
   line-height: 1.5em;
 }
 
-main p {
+main {
   font-size: 1.25em;
   line-height: 1.5em;
 }
@@ -693,6 +710,10 @@ ul.icons li .icon:before {
 
 ul.icons li a {
   color: inherit;
+}
+
+li {
+  line-height: 1.8em;
 }
 
 /* Form */
@@ -1236,15 +1257,13 @@ button:disabled,
   -webkit-transition: opacity 0.5s ease-in-out;
   -ms-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
-  bottom: 4em;
   color: rgba(255, 255, 255, 0.5);
-  left: 4em;
   opacity: 0.5;
-  position: absolute;
+  padding-bottom: 2em;
 }
 
 #footer .icons {
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.25em 0;
 }
 
 #footer .copyright {
@@ -1258,7 +1277,6 @@ button:disabled,
   display: inline-block;
   line-height: 1em;
   margin: 0 0 0 0.75em;
-  padding: 0 0 0 0.75em;
 }
 
 #footer .copyright li:first-child {
@@ -1279,43 +1297,49 @@ button:disabled,
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 1680px) {
-  #footer {
-    bottom: 3.5em;
-    left: 3.5em;
-  }
-}
-
-@media screen and (max-width: 736px) {
-  #footer {
-    bottom: 2em;
-    left: 2em;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  #footer {
-    bottom: 1.25em;
-    left: 1.25em;
-  }
-}
-
-@media screen and (max-height: 640px) {
-  #footer {
-    bottom: auto;
-    left: auto;
-    margin: 1em 0 0 0;
-    position: relative;
-  }
-}
-
-.logo {
-  position: absolute;
-  top: 20px;
+nav  {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   opacity: 0.5;
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+}
+
+nav .logo {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0.5;
+}
+
+nav .links {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  gap: 10px;
 }
 
 .smaller {
   display: block;
   font-size: 0.7em;
+}
+
+@media screen and (max-width: 1680px) {
+  nav .logo {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  nav .logo {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav .logo {
+    font-size: 0.7em;
+  }
 }
