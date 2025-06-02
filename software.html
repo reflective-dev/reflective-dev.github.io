@@ -73,7 +73,7 @@
       </section>
 
       <section>
-        <h2>Examples</h2>
+        <h2>Case Studies</h2>
       </section>
 
       <section>
@@ -96,15 +96,70 @@
         <h3><a href="https://www.testreflector.app">Test Reflector</a></h3>
 
         <p>
-          Effortlessly monitor your GitHub Actions workflows directly from your Mac’s menubar. Test Reflector provides a
-          convenient overview of your workflows’ statuses and recent results, eliminating the need to constantly switch
-          tabs or watch your email for failure notices.
-        </p>
-
-        <p>
           With dozens of open-source repositories and a host of personal and private projects that we maintain, we found
           that we needed a better tool for tracking GitHub Actions—especially on the days where we update dependencies
           across 40+ repos. Thus <a href="https://www.testreflector.app">Test Reflector</a> was born.
+        </p>
+
+        <p>
+          Test Reflector provides a concise overview of CI workflow statuses and recent results across repositories,
+          eliminating the need to constantly switch tabs or watch your email for failure notices. The application targets
+          iOS as well as macOS. We wrote the core of the application in Rust, for its type safety, stability,
+          headless testability, and cross-platform portability, bridged with Swift for the UI.
+        </p>
+      </section>
+
+      <section>
+        <h3>Replatforming a mission-critical legacy codebase</h3>
+
+        <p>
+          A Fortune 500 company relied on a legacy business-critical application for worldwide budgeting. This decades-old
+          application was difficult to understand, to modify, and to maintain. Operations had been outsourced, and no
+          team within the company had the expertise to continue development on this application.
+        </p>
+
+        <p>
+          We joined an existing team of developers who had just begun replatforming the application to Elixir and Phoenix.
+          In addition to feature development, we introduced software design patterns that increased the team’s ability to
+          ship code quickly, and we helped bring the team’s less-experienced Elixir developers up to speed.
+        </p>
+      </section>
+
+      <section>
+        <h3>Building a carbon emissions data pipeline</h3>
+
+        <p>
+          A large global logistics company wanted to operationalize the tracking of their greenhouse gas emissions.
+          Their data team could manually create emissions reports, taking days or weeks to produce; the company
+          wanted to provide on-demand real-time emissions data to their customers.
+        </p>
+
+        <p>
+          We joined a team of developers who had just begun building the new application. We built the initial data
+          pipeline that pulled data from a large data lake as well as from external APIs, performed real-time emissions
+          calculations, and created streaming exports capable of generating 100M row Excel sheets. We developed PostgreSQL
+          queries capable of summarizing and calculating emissions over 100s of millions of records in real-time using
+          optimized common table expressions (CTEs). We also trained developers new to Elixir in testing and coding paradigms.
+        </p>
+      </section>
+
+      <section>
+        <h3>Processing a multi-year healthcare data backlog</h3>
+
+        <p>
+          A state department of health had a multi-year backlog of COVID-19 health care data that epidemiologists needed
+          access to in order to perform comorbidity analysis. Processing the data required interacting with 6 different
+          health information exchanges (HIE), each of which had different resource thresholds and concurrencty limits. While
+          documenting that they supported the same HL7v3 API format, each HIE’s API demonstrated inconsistences and unique
+          response behaviors. New daily data dumps continually increased the size of the backlog, as well as changed the priority
+          of existing records depending on certain markers.
+        </p>
+
+        <p>
+          We rapidly developed a data pipeline application with built-in real-time dashboards for monitoring and reconfiguring
+          concurrency. We interacted with HIE personnel to investigate their APIs, develop workarounds for unintended API
+          behaviors, and help them to identify and apply fixes where possible. The deployed application used resilient
+          architectural patterns that allowed for real-time reprioritization, idempotency, error recovery, and observability.
         </p>
       </section>
 
