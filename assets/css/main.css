@@ -102,7 +102,7 @@ video {
 body {
   -ms-overflow-style: scrollbar;
   -webkit-text-size-adjust: none;
-  align-items: space-between; 
+  align-items: space-between;
   display: flex;
   line-height: 1;
 }
@@ -112,11 +112,13 @@ body > * {
   z-index: 2;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
@@ -170,21 +172,29 @@ body {
   background-color: #000;
 }
 
-nav, header, section, footer {
+nav,
+header,
+section,
+footer {
   padding: 0 5rem;
 }
 
-section, header, footer, nav {
+section,
+header,
+footer,
+nav {
   max-width: 80rem;
   margin: 0 auto;
-  width: 100%
+  width: 100%;
 }
 
 @media screen and (max-width: 1680px) {
   nav {
     padding: 0 3rem;
   }
-  header, section, footer {
+  header,
+  section,
+  footer {
     padding: 0 3.5rem;
   }
 }
@@ -193,13 +203,18 @@ section, header, footer, nav {
   nav {
     padding: 0 0.7rem;
   }
-  header, section, footer {
+  header,
+  section,
+  footer {
     padding: 0 1rem;
   }
 }
 
 @media screen and (max-width: 360px) {
-  nav, header, section, footer {
+  nav,
+  header,
+  section,
+  footer {
     padding: 0 0.75rem;
   }
   nav {
@@ -563,7 +578,7 @@ section.callout {
   padding-bottom: 1.5em;
   margin: 1em 0 2em;
   line-height: 1.8;
-  max-width: 100%
+  max-width: 100%;
 }
 
 .callout-inner {
@@ -756,7 +771,6 @@ footer .copyright a {
   color: inherit;
 }
 
-
 nav {
   align-items: center;
   display: flex;
@@ -785,7 +799,8 @@ nav .links {
   row-gap: 0;
 }
 
-nav .links a, nav .links span {
+nav .links a,
+nav .links span {
   line-height: 1;
   white-space: nowrap;
 }
