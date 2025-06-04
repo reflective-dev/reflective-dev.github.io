@@ -572,6 +572,14 @@ article.special {
   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
 }
 
+.cols  img {
+  width: 100%;
+}
+
+.cols  img + p {
+  margin-top: 1em;
+}
+
 section.callout {
   background: linear-gradient(70deg, rgba(24, 42, 47, 0.5) 10%, rgba(5, 24, 32, 0.5) 80%);
   padding-top: 1.5em;
