@@ -16,4 +16,27 @@
 
 ## Solution
 
+- Created a data pipeline that:
+  - Accepted an arbitrary amount of new test result data at any time.
+  - Stored all test results in a standard PostgreSQL database.
+  - Made just-in-time decisions about which patients to make API
+    requests for, based on the combined test result data for a given
+    patient.
+  - Made requests to the different API endpoints at different rates
+    which were configurable in real time.
+- Created a custom live dashboard showing the current status of all the
+  parts of the pipeline and a UI for controlling the request frequency
+  for each API endpoint.
+- Ran the entire pipeline on a single cloud server that was monitored
+  with standard monitoring and alerting mechanisms.
+
 ## Conclusion / Take aways
+
+- Fine-grained rate limiting provided the best possible throughput
+  without overhwelming the target APIs.
+- Using real-time prioritization instead of a job queue allowed for the
+  most actionable data to be delivered to epidemiologists first.
+- Running the entire pipeline on a single cloud server greatly
+  simplified deployment.
+- Persisting both the data and the API request statuses resulted in a
+  system that could easily recover from downtime.
